@@ -7,7 +7,7 @@ do
 	if [[ -a $HOME/$file ]]; then
 		echo "$file already exists, cannot make symbolic link"
 	else
-		ln -s $HOME/dotfiles/$file $HOME/${file}.test
+		ln -s $HOME/dotfiles/$file $HOME/${file}
 		echo "create ${file} symbolic link to $HOME/$file"
 	fi
 done
